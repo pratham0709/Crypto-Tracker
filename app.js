@@ -23,11 +23,11 @@ const showPrice = (coinData)=>{
     const change = coinData.priceChange1d;
     const coin = coinData.name;
     const curr = 'USD';
-    var col= "green";
+    var col= "pink";
     if(change<0){
         col = "red";
     }
-    res.innerHTML = `<tr class="bg-primary" style="color: white;">
+    res.innerHTML = `<tr class="bg-primary" style="color: blue;">
     <td>
         Property
     </td>
@@ -40,11 +40,11 @@ const showPrice = (coinData)=>{
     <td style="color:${col};"><span style="font-size: 1.3em;">${price}</span> ${curr}</td>
 </tr>
 <tr>
-    <td>Volume (24hrs)</td>
+    <td>Volume </td>
     <td>${vol}</td>
 </tr>
 <tr>
-    <td>Change (24hrs)</td>
+    <td>Change </td>
     <td style="color:${col};">${change} ${curr}</td>
 </tr>`;
 };
