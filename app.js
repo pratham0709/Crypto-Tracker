@@ -27,7 +27,7 @@ const showPrice = (coinData)=>{
     if(change<0){
         col = "red";
     }
-    res.innerHTML = `<tr class="bg-primary" style="color: black;">
+    res.innerHTML = `<tr class="bg-primary" style="color: white;">
     <td>
         Property
     </td>
